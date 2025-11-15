@@ -190,34 +190,34 @@
     </section>
 
     <!-- WhatsApp Connection Form Section -->
-    <section id="whatsapp-form" class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-rose-500 via-purple-500 to-pink-500">
+    <section id="whatsapp-form" class="py-12 md:py-16 lg:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-rose-500 via-purple-500 to-pink-500">
         <div class="max-w-2xl mx-auto">
-            <div class="text-center mb-8">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-4" data-cta-title>Ready to Get Started?</h2>
-                <p class="text-lg md:text-xl text-white/90 mb-4" data-cta-subtitle>Enter your WhatsApp number below to connect with us</p>
-                <div class="inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-white text-sm font-medium">
+            <div class="text-center mb-6 md:mb-8">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-3 md:mb-4" data-cta-title>Ready to Get Started?</h2>
+                <p class="text-base sm:text-lg md:text-xl text-white/90 mb-3 md:mb-4 px-2" data-cta-subtitle>Enter your WhatsApp number below to connect with us</p>
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs sm:text-sm font-medium mx-2">
                     <span>⚠️</span>
-                    <span>You must complete the linking process to access our service</span>
+                    <span class="whitespace-nowrap">You must complete the linking process to access our service</span>
                 </div>
             </div>
             
             <!-- WhatsApp Connection Form -->
-            <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-10">
-                <div class="text-center mb-6">
-                    <div class="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-rose-400 to-purple-500 flex items-center justify-center text-4xl mb-4">💬</div>
-                    <h3 class="text-2xl md:text-3xl font-display font-bold text-gray-900 mb-2">Connect via WhatsApp</h3>
-                    <p class="text-gray-600 mb-3">Enter your WhatsApp number and we'll generate a secure link to connect you directly.</p>
-                    <div class="inline-flex items-center gap-2 px-4 py-2 bg-rose-50 border border-rose-200 rounded-lg text-rose-700 text-sm font-medium">
+            <div class="bg-white rounded-2xl md:rounded-3xl shadow-2xl p-5 sm:p-6 md:p-8 lg:p-10">
+                <div class="text-center mb-5 md:mb-6">
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto rounded-full bg-gradient-to-br from-rose-400 to-purple-500 flex items-center justify-center text-3xl sm:text-4xl mb-3 md:mb-4">💬</div>
+                    <h3 class="text-xl sm:text-2xl md:text-3xl font-display font-bold text-gray-900 mb-2">Connect via WhatsApp</h3>
+                    <p class="text-sm sm:text-base text-gray-600 mb-2 md:mb-3 px-2">Enter your WhatsApp number and we'll generate a secure link to connect you directly.</p>
+                    <div class="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 sm:px-4 sm:py-2 bg-rose-50 border border-rose-200 rounded-lg text-rose-700 text-xs sm:text-sm font-medium mx-2">
                         <span>🔗</span>
-                        <span>Service access requires completing this linking process</span>
+                        <span class="text-center">Service access requires completing this linking process</span>
                     </div>
                 </div>
                 
-                <form id="whatsappForm" class="space-y-6">
+                <form id="whatsappForm" class="space-y-4 sm:space-y-5 md:space-y-6">
                     <div>
-                        <label for="phoneNumber" class="block text-sm font-semibold text-gray-700 mb-2">WhatsApp Number</label>
+                        <label for="phoneNumber" class="block text-sm sm:text-base font-semibold text-gray-700 mb-2">WhatsApp Number</label>
                         <div class="flex rounded-xl border-2 border-gray-200 focus-within:border-rose-500 transition-colors overflow-hidden">
-                            <span class="px-4 py-3 bg-gradient-to-br from-rose-50 to-purple-50 text-gray-700 font-semibold border-r-2 border-gray-200" data-country-code>+234</span>
+                            <span class="px-3 sm:px-4 py-2.5 sm:py-3 bg-gradient-to-br from-rose-50 to-purple-50 text-gray-700 font-semibold border-r-2 border-gray-200 text-sm sm:text-base whitespace-nowrap" data-country-code>+234</span>
                             <input 
                                 type="tel" 
                                 id="phoneNumber" 
@@ -225,52 +225,54 @@
                                 placeholder="801 234 5678"
                                 required
                                 pattern="[0-9\s]{10,15}"
-                                maxlength="15"
-                                class="flex-1 px-4 py-3 outline-none text-gray-900 placeholder-gray-400"
+                                maxlength="12"
+                                inputmode="numeric"
+                                autocomplete="tel"
+                                class="flex-1 px-3 sm:px-4 py-2.5 sm:py-3 outline-none text-gray-900 placeholder-gray-400 text-base sm:text-lg min-w-0"
                             >
                         </div>
                         <small class="block mt-2 text-xs text-gray-500">Enter your 10-digit phone number (without country code)</small>
                     </div>
                     
-                    <button type="submit" id="submitButton" class="w-full py-4 px-6 bg-gradient-to-r from-rose-500 via-rose-600 to-purple-600 text-white font-semibold rounded-xl shadow-lg shadow-rose-500/50 hover:shadow-xl hover:shadow-rose-500/60 transition-all duration-300 hover:scale-[1.02] transform flex items-center justify-center gap-2">
+                    <button type="submit" id="submitButton" class="w-full py-3 sm:py-4 px-5 sm:px-6 bg-gradient-to-r from-rose-500 via-rose-600 to-purple-600 text-white font-semibold text-base sm:text-lg rounded-xl shadow-lg shadow-rose-500/50 hover:shadow-xl hover:shadow-rose-500/60 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] transform flex items-center justify-center gap-2">
                         <span>Generate WhatsApp Link</span>
-                        <span class="text-xl">→</span>
+                        <span class="text-lg sm:text-xl">→</span>
                     </button>
                 </form>
                 
                 <!-- Loading State -->
-                <div id="formLoading" class="hidden text-center py-8">
-                    <div class="w-16 h-16 mx-auto mb-6 border-4 border-rose-200 border-t-rose-500 rounded-full animate-spin"></div>
-                    <h3 class="text-xl font-display font-bold text-gray-900 mb-2">Generating Your Link...</h3>
-                    <p class="text-gray-600">Please wait while we prepare your WhatsApp connection link.</p>
+                <div id="formLoading" class="hidden text-center py-6 sm:py-8">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 mx-auto mb-4 sm:mb-6 border-4 border-rose-200 border-t-rose-500 rounded-full animate-spin"></div>
+                    <h3 class="text-lg sm:text-xl font-display font-bold text-gray-900 mb-2">Generating Your Link...</h3>
+                    <p class="text-sm sm:text-base text-gray-600 px-2">Please wait while we prepare your WhatsApp connection link.</p>
                 </div>
                 
                 <!-- Success State -->
-                <div id="formSuccess" class="hidden text-center py-8">
-                    <div class="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-green-400 to-green-500 flex items-center justify-center text-4xl mb-4">✅</div>
-                    <h3 class="text-2xl font-display font-bold text-gray-900 mb-2">Ready to Connect!</h3>
-                    <p class="text-gray-600 mb-6">Click the button below to open WhatsApp with a pre-filled message.</p>
+                <div id="formSuccess" class="hidden text-center py-6 sm:py-8">
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto rounded-full bg-gradient-to-br from-green-400 to-green-500 flex items-center justify-center text-3xl sm:text-4xl mb-3 sm:mb-4">✅</div>
+                    <h3 class="text-xl sm:text-2xl font-display font-bold text-gray-900 mb-2">Ready to Connect!</h3>
+                    <p class="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 px-2">Click the button below to open WhatsApp with a pre-filled message.</p>
                     
-                    <div class="mb-6">
-                        <a id="whatsappLink" href="#" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-green-500 to-green-600 text-white font-semibold rounded-xl shadow-lg shadow-green-500/50 hover:shadow-xl hover:shadow-green-500/60 transition-all duration-300 hover:scale-105 transform" target="_blank">
-                            <span class="text-2xl">💬</span>
+                    <div class="mb-4 sm:mb-6">
+                        <a id="whatsappLink" href="#" class="inline-flex items-center justify-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-green-500 to-green-600 text-white font-semibold text-base sm:text-lg rounded-xl shadow-lg shadow-green-500/50 hover:shadow-xl hover:shadow-green-500/60 transition-all duration-300 hover:scale-105 active:scale-95 transform" target="_blank">
+                            <span class="text-xl sm:text-2xl">💬</span>
                             <span>Open WhatsApp</span>
                         </a>
                     </div>
                     
-                    <p class="text-sm text-gray-500 mb-3">If WhatsApp doesn't open automatically, copy the link below:</p>
-                    <div class="flex gap-2">
-                        <input type="text" id="linkToCopy" readonly class="flex-1 px-4 py-2 text-xs bg-gray-50 border border-gray-200 rounded-lg text-gray-700 font-mono">
-                        <button id="copyButton" class="px-4 py-2 bg-gray-900 text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors">Copy</button>
+                    <p class="text-xs sm:text-sm text-gray-500 mb-2 sm:mb-3 px-2">If WhatsApp doesn't open automatically, copy the link below:</p>
+                    <div class="flex flex-col sm:flex-row gap-2 px-2">
+                        <input type="text" id="linkToCopy" readonly class="flex-1 px-3 sm:px-4 py-2 text-xs sm:text-sm bg-gray-50 border border-gray-200 rounded-lg text-gray-700 font-mono min-w-0">
+                        <button id="copyButton" class="px-4 sm:px-6 py-2 bg-gray-900 text-white font-semibold text-sm sm:text-base rounded-lg hover:bg-gray-800 active:bg-gray-700 transition-colors whitespace-nowrap">Copy</button>
                     </div>
                     
-                    <button id="resetForm" class="mt-6 text-rose-600 hover:text-rose-700 font-medium text-sm">Generate Another Link</button>
+                    <button id="resetForm" class="mt-4 sm:mt-6 text-rose-600 hover:text-rose-700 active:text-rose-800 font-medium text-xs sm:text-sm">Generate Another Link</button>
                 </div>
                 
-                <div class="mt-6 pt-6 border-t border-gray-200">
-                    <p class="text-xs text-center text-gray-500 flex items-center justify-center gap-1">
+                <div class="mt-4 sm:mt-6 pt-4 sm:pt-6 border-t border-gray-200">
+                    <p class="text-xs text-center text-gray-500 flex items-center justify-center gap-1 px-2">
                         <span>🔒</span>
-                        Your information is secure and will only be used to connect you via WhatsApp
+                        <span>Your information is secure and will only be used to connect you via WhatsApp</span>
                     </p>
                 </div>
             </div>

@@ -100,17 +100,45 @@ document.addEventListener('DOMContentLoaded', function() {
     const phoneInput = document.getElementById('phoneNumber');
     if (phoneInput) {
         phoneInput.addEventListener('input', function(e) {
+            // Get cursor position before formatting
+            const cursorPosition = e.target.selectionStart;
             let value = e.target.value.replace(/\D/g, '');
+            
+            // Limit to 10 digits
             if (value.length > 10) {
                 value = value.slice(0, 10);
             }
+            
+            // Format with spaces: XXX XXX XXXX
+            let formatted = value;
             if (value.length > 3) {
-                value = value.slice(0, 3) + ' ' + value.slice(3);
+                formatted = value.slice(0, 3) + ' ' + value.slice(3);
             }
-            if (value.length > 7) {
-                value = value.slice(0, 7) + ' ' + value.slice(7);
+            if (value.length > 6) {
+                formatted = value.slice(0, 3) + ' ' + value.slice(3, 6) + ' ' + value.slice(6);
             }
-            e.target.value = value;
+            
+            e.target.value = formatted;
+            
+            // Restore cursor position (adjust for added spaces)
+            let newCursorPosition = cursorPosition;
+            if (value.length > 3 && cursorPosition > 3) {
+                newCursorPosition += 1;
+            }
+            if (value.length > 6 && cursorPosition > 6) {
+                newCursorPosition += 1;
+            }
+            // Ensure cursor doesn't go beyond the value
+            newCursorPosition = Math.min(newCursorPosition, formatted.length);
+            e.target.setSelectionRange(newCursorPosition, newCursorPosition);
+        });
+        
+        // Prevent non-numeric input on mobile
+        phoneInput.addEventListener('keypress', function(e) {
+            const char = String.fromCharCode(e.which);
+            if (!/[0-9]/.test(char)) {
+                e.preventDefault();
+            }
         });
     }
     
