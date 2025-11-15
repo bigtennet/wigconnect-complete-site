@@ -1,0 +1,12 @@
+I have a wig sales service where I help people bring in wigs from vietnam, India and eastern europe, especially from Vietnam. It is particularly unique because I offer the service  for a very cheap price for people in Nigeria.
+
+Now, I'm meeting you a very professional junior dev to a full stack web developer to build a clean landing page for me, it should have a clear CTA for them to connect securely to the service with their whatsapp line, after they click the button, you will prompt them with a very beautiful modal to input their whatsapp number, then, after that, it should generate a link with a predefined text that once they click, it will take them to whatsapp and then the message will continue from there
+
+Make the modal have a loading animation after they input their number to continue and then supply tem the predefined text link
+
+Make it very responsive, I don't like the generic design, make it look really modern, aesthetic, you know girls like something aestheic, you can use shadcn and tailwindcss cdn too
+
+instead of using fixed values for all, now, let it pick them from a json file which will act as settings.json for the business name, owner number, color theme, dark/light mode: true/false, what else?
+
+fix the website and make the modal stop popping up first on load, it should only be tied to the button presses, work on ittt!!
+

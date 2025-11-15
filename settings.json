@@ -1,0 +1,155 @@
+{
+  "business": {
+    "name": "WigConnect",
+    "tagline": "Premium Wig Import Service",
+    "description": "Affordable wig import service exclusively for Nigeria. Get high-quality wigs delivered to your doorstep at unbeatable prices."
+  },
+  "contact": {
+    "ownerPhone": "2349057930710",
+    "countryCode": "234",
+    "countryName": "Nigeria",
+    "whatsappMessage": "Hello! I'm interested in your wig import service from Vietnam, India, and Eastern Europe. I'd like to learn more about your affordable pricing for Nigeria."
+  },
+  "theme": {
+    "mode": "light",
+    "primaryColor": "rose",
+    "secondaryColor": "purple",
+    "accentColor": "pink",
+    "colorScheme": {
+      "rose": {
+        "50": "#fdf2f8",
+        "100": "#fce7f3",
+        "200": "#fbcfe8",
+        "300": "#f9a8d4",
+        "400": "#f472b6",
+        "500": "#ec4899",
+        "600": "#db2777"
+      },
+      "purple": {
+        "50": "#faf5ff",
+        "100": "#f3e8ff",
+        "200": "#e9d5ff",
+        "300": "#d8b4fe",
+        "400": "#c084fc",
+        "500": "#a855f7"
+      },
+      "pink": {
+        "50": "#fdf2f8",
+        "100": "#fce7f3",
+        "200": "#fbcfe8",
+        "300": "#f9a8d4",
+        "400": "#f472b6",
+        "500": "#ec4899"
+      }
+    }
+  },
+  "content": {
+    "hero": {
+      "title": "Beautiful Wigs from",
+      "titleHighlight": "Vietnam & Beyond",
+      "subtitle": "Affordable wig import service exclusively for Nigeria. Get high-quality wigs delivered to your doorstep at unbeatable prices.",
+      "badge": "✨ Premium Quality Wigs"
+    },
+    "features": [
+      {
+        "icon": "🌏",
+        "text": "Direct from Vietnam, India & Europe"
+      },
+      {
+        "icon": "💰",
+        "text": "Best Prices in Nigeria"
+      },
+      {
+        "icon": "🚚",
+        "text": "Fast & Secure Delivery"
+      }
+    ],
+    "about": {
+      "title": "Why Choose Us?",
+      "subtitle": "Experience the difference of premium quality and exceptional service",
+      "cards": [
+        {
+          "icon": "🇻🇳",
+          "title": "Vietnam Specialization",
+          "description": "We specialize in importing premium wigs directly from Vietnam, known for the highest quality in the industry."
+        },
+        {
+          "icon": "💵",
+          "title": "Affordable Pricing",
+          "description": "Get premium quality wigs at prices you won't find anywhere else in Nigeria. We cut out the middleman."
+        },
+        {
+          "icon": "🌍",
+          "title": "Global Sourcing",
+          "description": "We source from Vietnam, India, and Eastern Europe to give you the best selection and prices."
+        },
+        {
+          "icon": "🔒",
+          "title": "Secure Service",
+          "description": "Your orders are handled with complete security and transparency from start to finish."
+        }
+      ]
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "Everything you need for your perfect wig",
+      "items": [
+        {
+          "icon": "✨",
+          "title": "Custom Wig Import",
+          "description": "Order specific wigs from our catalog of suppliers in Vietnam, India, and Eastern Europe."
+        },
+        {
+          "icon": "📦",
+          "title": "Bulk Orders",
+          "description": "Special pricing for bulk orders. Perfect for businesses and resellers."
+        },
+        {
+          "icon": "💬",
+          "title": "Consultation",
+          "description": "Get expert advice on the best wig options for your needs and budget."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "subtitle": "Connect with us on WhatsApp to place your order or ask questions",
+      "buttonText": "Connect via WhatsApp"
+    },
+    "footer": {
+      "copyright": "© 2024 WigConnect. All rights reserved.",
+      "tagline": "Premium wig import service for Nigeria"
+    }
+  },
+  "navigation": {
+    "links": [
+      {
+        "label": "About",
+        "href": "#about"
+      },
+      {
+        "label": "Services",
+        "href": "#services"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      }
+    ]
+  },
+  "meta": {
+    "title": "Premium Wig Import Service - Nigeria",
+    "description": "Affordable wig import service from Vietnam, India, and Eastern Europe. Best prices in Nigeria.",
+    "keywords": "wigs, wig import, Nigeria, Vietnam, affordable wigs"
+  },
+  "settings": {
+    "loadingDelay": 1500,
+    "phoneFormat": {
+      "countryCode": "+234",
+      "placeholder": "801 234 5678",
+      "minLength": 10,
+      "maxLength": 10
+    }
+  }
+}
+
