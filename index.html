@@ -76,7 +76,7 @@
     <section class="pt-24 md:pt-32 pb-16 md:pb-24 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto">
             <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-                <div class="text-center lg:text-left space-y-6 md:space-y-8 animate-fade-in">
+                <div class="text-center lg:text-left space-y-6 md:space-y-8 animate-fade-in order-2 lg:order-1">
                     <div class="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-rose-100 to-purple-100 text-rose-700 text-sm font-medium mb-4" data-hero-badge>
                         ✨ Premium Quality Wigs
                     </div>
@@ -108,17 +108,50 @@
                         <p class="text-sm text-gray-600 max-w-md mx-auto">⚠️ <strong>Important:</strong> You must complete the WhatsApp linking process below to access our service</p>
                     </div>
                 </div>
-                <div class="relative lg:block hidden">
+                <div class="relative lg:block hidden order-1 lg:order-2">
                     <div class="relative">
                         <div class="absolute inset-0 bg-gradient-to-r from-rose-400 to-purple-500 rounded-3xl transform rotate-6 opacity-20 blur-2xl"></div>
-                        <div class="relative bg-gradient-to-br from-rose-100 via-purple-100 to-pink-100 rounded-3xl p-12 shadow-2xl border border-white/50 backdrop-blur-sm">
-                            <div class="space-y-6">
-                                <div class="w-20 h-20 rounded-full bg-gradient-to-br from-rose-400 to-purple-500 mx-auto flex items-center justify-center text-4xl animate-pulse">✨</div>
-                                <div class="text-center space-y-2">
-                                    <h3 class="text-2xl font-display font-bold text-gray-800">Premium Quality</h3>
-                                    <p class="text-gray-600">Direct from trusted suppliers</p>
+                        <div class="relative bg-gradient-to-br from-rose-100 via-purple-100 to-pink-100 rounded-3xl p-8 shadow-2xl border border-white/50 backdrop-blur-sm overflow-hidden">
+                            <!-- Wig Images Gallery -->
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="relative aspect-square rounded-2xl overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400&h=400&fit=crop&q=80" alt="Premium Wig 1" class="w-full h-full object-cover">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                                </div>
+                                <div class="relative aspect-square rounded-2xl overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300 mt-8">
+                                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400&h=400&fit=crop&q=80" alt="Premium Wig 2" class="w-full h-full object-cover">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                                </div>
+                                <div class="relative aspect-square rounded-2xl overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                                    <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400&h=400&fit=crop&q=80" alt="Premium Wig 3" class="w-full h-full object-cover">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                                </div>
+                                <div class="relative aspect-square rounded-2xl overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300 mt-8">
+                                    <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&h=400&fit=crop&q=80" alt="Premium Wig 4" class="w-full h-full object-cover">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mobile Wig Images -->
+                <div class="lg:hidden order-1 mb-8">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="relative aspect-square rounded-2xl overflow-hidden shadow-lg">
+                            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400&h=400&fit=crop&q=80" alt="Premium Wig 1" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                        </div>
+                        <div class="relative aspect-square rounded-2xl overflow-hidden shadow-lg mt-8">
+                            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400&h=400&fit=crop&q=80" alt="Premium Wig 2" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                        </div>
+                        <div class="relative aspect-square rounded-2xl overflow-hidden shadow-lg">
+                            <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400&h=400&fit=crop&q=80" alt="Premium Wig 3" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                        </div>
+                        <div class="relative aspect-square rounded-2xl overflow-hidden shadow-lg mt-8">
+                            <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&h=400&fit=crop&q=80" alt="Premium Wig 4" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                         </div>
                     </div>
                 </div>
@@ -170,17 +203,29 @@
                 <p class="text-lg text-gray-600 max-w-2xl mx-auto" data-services-subtitle>Everything you need for your perfect wig</p>
             </div>
             <div class="grid md:grid-cols-3 gap-6 md:gap-8">
-                <div class="bg-gradient-to-br from-rose-50 to-rose-100 rounded-2xl p-8 border border-rose-200 hover:shadow-xl transition-all duration-300" data-service-item>
+                <div class="bg-gradient-to-br from-rose-50 to-rose-100 rounded-2xl p-8 border border-rose-200 hover:shadow-xl transition-all duration-300 overflow-hidden group" data-service-item>
+                    <div class="relative h-48 rounded-xl overflow-hidden mb-4">
+                        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&h=400&fit=crop&q=80" alt="Custom Wig Import" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-rose-500/30 to-transparent"></div>
+                    </div>
                     <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-rose-500 to-rose-600 flex items-center justify-center text-2xl mb-4" data-service-icon>✨</div>
                     <h3 class="text-2xl font-display font-semibold text-gray-900 mb-3" data-service-title>Custom Wig Import</h3>
                     <p class="text-gray-700 leading-relaxed" data-service-description>Order specific wigs from our catalog of suppliers in Vietnam, India, and Eastern Europe.</p>
                 </div>
-                <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-8 border border-purple-200 hover:shadow-xl transition-all duration-300" data-service-item>
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-8 border border-purple-200 hover:shadow-xl transition-all duration-300 overflow-hidden group" data-service-item>
+                    <div class="relative h-48 rounded-xl overflow-hidden mb-4">
+                        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&h=400&fit=crop&q=80" alt="Bulk Orders" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-purple-500/30 to-transparent"></div>
+                    </div>
                     <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center text-2xl mb-4" data-service-icon>📦</div>
                     <h3 class="text-2xl font-display font-semibold text-gray-900 mb-3" data-service-title>Bulk Orders</h3>
                     <p class="text-gray-700 leading-relaxed" data-service-description>Special pricing for bulk orders. Perfect for businesses and resellers.</p>
                 </div>
-                <div class="bg-gradient-to-br from-pink-50 to-pink-100 rounded-2xl p-8 border border-pink-200 hover:shadow-xl transition-all duration-300" data-service-item>
+                <div class="bg-gradient-to-br from-pink-50 to-pink-100 rounded-2xl p-8 border border-pink-200 hover:shadow-xl transition-all duration-300 overflow-hidden group" data-service-item>
+                    <div class="relative h-48 rounded-xl overflow-hidden mb-4">
+                        <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=600&h=400&fit=crop&q=80" alt="Consultation" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-pink-500/30 to-transparent"></div>
+                    </div>
                     <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-pink-500 to-rose-500 flex items-center justify-center text-2xl mb-4" data-service-icon>💬</div>
                     <h3 class="text-2xl font-display font-semibold text-gray-900 mb-3" data-service-title>Consultation</h3>
                     <p class="text-gray-700 leading-relaxed" data-service-description>Get expert advice on the best wig options for your needs and budget.</p>
@@ -222,10 +267,10 @@
                                 type="tel" 
                                 id="phoneNumber" 
                                 name="phoneNumber" 
-                                placeholder="801 234 5678"
+                                placeholder="8012345678"
                                 required
-                                pattern="[0-9\s]{10,15}"
-                                maxlength="12"
+                                pattern="[0-9]{10}"
+                                maxlength="10"
                                 inputmode="numeric"
                                 autocomplete="tel"
                                 class="flex-1 px-3 sm:px-4 py-2.5 sm:py-3 outline-none text-gray-900 placeholder-gray-400 text-base sm:text-lg min-w-0"
